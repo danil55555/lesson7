@@ -1,0 +1,246 @@
+*{box-sizing:border-box;} /*одинаковая ширина для всех тегов*/
+
+main::after{	/*псевдо класс позволяет добавить в конец*/
+clear: both;
+display: block;
+content: "";
+}
+[class*="col-"]{			/*прописываеться для всех классов у которых имя начинаеться на col-*/
+	float: left;
+	padding: 15px;
+}
+header{
+	background: #EB9E17;
+	color: #0D0A0A;
+	padding: 15px;
+
+}
+aside{
+	background: #7180F0;
+	color: #BE22D1;
+	padding: 15px; 
+	font-size: 12px;
+}
+[class*="col-"]{
+	width: 100%
+}
+
+	@media (min-width: 600px){
+		.col-m-1{
+			width: 8.333333333333333%;
+		}
+
+.col-m-2{
+			width: 16.66666666666667%;
+		}
+		.col-m-3{
+			width: 25%;
+		}
+		.col-m-4{
+			width: 33.33333333333333%;
+		}
+		.col-m-5{
+			width: 41.66666666666667%;
+		}
+		.col-m-6{
+			width: 50%;
+		}
+		.col-m-7{
+			width: 58.33333333333333%;
+		}
+		.col-m-8{
+			width: 66.66666666666667%;
+		}
+		.col-m-9{
+			width: 75%;
+		}
+				.col-m-10{
+			width: 83.33333333333333%;
+		}
+.col-m-11{
+			width: 91.66666666666667%;
+		}
+.col-m-12{
+			width: 100%;
+		}
+
+	}
+
+	@media (min-width: 768px){
+		.col-1{
+			width: 8.333333333333333%;
+		}
+.col-2{
+			width: 16.66666666666667%;
+		}
+		.col-3{
+			width: 25%;
+		}
+		.col-4{
+			width: 33.33333333333333%;
+		}
+		.col-5{
+			width: 41.66666666666667%;
+		}
+		.col-6{
+			width: 50%;
+		}
+		.col-7{
+			width: 58.33333333333333%;
+		}
+		.col-8{
+			width: 66.66666666666667%;
+		}
+		.col-9{
+			width: 75%;
+		}
+				.col-10{
+			width: 83.33333333333333%;
+		}
+.col-11{
+			width: 91.66666666666667%;
+		}
+.col-12{
+			width: 100%;
+		}
+
+	}
+
+ul.g_menu{
+
+	list-style-type: none;	/*убрать маркеры*/
+	margin: 0;
+	padding: 0;
+	overflow: hidden; 
+	background: #22DD3C;
+	
+
+
+
+
+
+		  }	
+
+ul.g_menu li{
+	float: left;		/*обтекание слева*/
+
+
+
+
+
+}	
+ul.g_menu li a{
+	color: white;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+
+
+
+
+
+}	  
+ul.g_menu .active{
+	background: black;
+
+
+
+
+
+}
+
+ul.g_menu li a:hover:not(.active){ 		/*псевдокласс определяет поведение обьекта когда на него наводишь указатель*/
+
+/*not не ипользовать ко всем кроме активе*/
+
+background: black;
+
+
+
+}
+.t1{
+font-family: verdana;		/*используемый шрифт*/
+font-size: 12px;		/*кегель (размер букв)*/
+line-height: 18px;		/*интерлиньяж (расстояние между строками)*/
+text-indent: 35px;		/*обзацный отступ (крассная строка)*/
+border: 1px solid #000;		/*рамка: толщина стиль цвет;*/
+margin: 10px;		/*внешнее поле*/
+padding: 10px;		/*внутренний отступ*/
+}
+ 
+ .t2{
+ 	font-family: times new roman;
+ 	font-style: 24px;
+ 	line-height: 36px;
+ 	text-indent: 35px;
+ 	border: 1px dashed #000;
+ 	width: 80%;
+ 	margin: 10px auto;
+ 	padding: 15px;
+
+
+
+ }
+ .t3{
+ 	font-family: courier new;
+ 	font-style: 14px;
+ 	line-height: 20px;
+ 	text-indent: 35px;
+ 	width: 60%;
+ 	margin: 3px auto;
+ 	text-align: right;
+ 	padding: 5px;
+ 	border: 1px dotted #000;
+
+ }
+
+ .t4{
+ 	font-family: comic sans ms;
+ 	font-style: 13px;
+ 	line-height: 18px;
+ 	text-indent: 35px;
+ 	width: 70%;
+ 	margin: 3px auto;
+ 	text-align: left;
+ 	padding: 5px;
+ 	border: 3px double maroon;
+ 	
+ }
+@font-face {
+	font-family: 'Conv_Angelica';
+	src: url('../fonts/Angelica.eot');
+	src: local('☺'), url('../fonts/Angelica.woff') format('woff'), url('../fonts/Angelica.ttf') format('truetype'), url('../fonts/Angelica.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.t5{
+ 	font-family: 'Conv_Angelica';
+ 	font-style: 36px;
+ 	line-height: 46px;
+ 	text-indent: 35px;
+ 	width: 70%;
+ 	margin: 3px auto;
+ 	text-align: left;
+ 	padding: 5px;
+ 	border: 3px outset red;
+ 	
+ }
+ .tt1, .tt2, .tt3, .tt4{
+ 	font-family: times new roman;
+ 	font-style: 19px;
+ 	line-height: 26px;
+ 	margin: 2%;
+ 	border-bottom: 2px dashed black;
+ 	padding-bottom: 2px;
+
+ }
+.tt1{
+	text-decoration: overline;
+}
+.tt2{
+	text-decoration: underline;
+}
+.tt3{
+	text-decoration: line-through;
+}
